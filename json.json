@@ -16,14 +16,14 @@
 		"prefix": "sftp",
 		"body": [
 			"{",
-				"\t\"name\": \"golang log-collection\",",
+				"\t\"name\": \"$1\",",
 				"\t\"host\": \"d.sourcedev.cc\",",
 				"\t\"protocol\": \"sftp\",",
 				"\t\"port\": 22,",
 				"\t\"username\": \"root\",",
-				"\t\"remotePath\": \"/mnt/log-collection/\",",
+				"\t\"remotePath\": \"$2\",",
 				"\t\"uploadOnSave\": true,",
-				"\t\"privateKeyPath\": \"/Users/ydl/.ssh/id_rsa\"",
+				"\t\"privateKeyPath\": \"~/.ssh/id_rsa\"",
 		"}"
 		],
 		"description": "sftp config"
